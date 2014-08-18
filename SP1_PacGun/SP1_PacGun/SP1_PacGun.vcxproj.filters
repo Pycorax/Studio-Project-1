@@ -27,6 +27,9 @@
     <ClCompile Include="..\..\..\SP1Framework\SP1Framework\Framework\timer.cpp">
       <Filter>SP1Framework</Filter>
     </ClCompile>
+    <ClCompile Include="gameStage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SP1Framework\SP1Framework\Framework\console.h">
@@ -34,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\SP1Framework\SP1Framework\Framework\timer.h">
       <Filter>SP1Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="gameStage.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
