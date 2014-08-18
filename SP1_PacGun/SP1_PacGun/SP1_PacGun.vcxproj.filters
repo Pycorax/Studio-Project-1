@@ -30,6 +30,9 @@
     <ClCompile Include="gameStage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="maps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SP1Framework\SP1Framework\Framework\console.h">
@@ -39,6 +42,9 @@
       <Filter>SP1Framework</Filter>
     </ClInclude>
     <ClInclude Include="gameStage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="maps.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

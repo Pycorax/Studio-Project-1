@@ -4,3 +4,8 @@ void mainMenu()
 {
 
 }
+
+void game()
+{
+
+}

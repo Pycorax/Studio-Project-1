@@ -28,6 +28,9 @@ void main()
 			case MAIN_MENU:
 				mainMenu();
 				break;
+			case GAME:
+				game();
+				break;
 		}
 	}
 }

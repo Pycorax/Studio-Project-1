@@ -4,5 +4,6 @@
 #include <iostream>
 
 void mainMenu();
+void game();
 
 #endif
