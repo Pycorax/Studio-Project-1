@@ -1,2 +1,5 @@
 /Debug/
 *.vcxproj.user
+*.opensdf
+*.sdf
+*.suo

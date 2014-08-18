@@ -1,2 +1,5 @@
 /ipch/
 /Debug/
+*.opensdf
+*.sdf
+*.suo

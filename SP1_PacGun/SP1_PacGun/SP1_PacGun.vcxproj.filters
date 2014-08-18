@@ -16,15 +16,15 @@
     <Filter Include="SP1Framework">
       <UniqueIdentifier>{38edcaf0-d2bc-4e61-9721-76a129f69242}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Maps">
+      <UniqueIdentifier>{06c1be29-f480-4c5a-b689-10124e5a187a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SP1Framework\SP1Framework\Framework\console.cpp">
-      <Filter>SP1Framework</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\SP1Framework\SP1Framework\Framework\timer.cpp">
       <Filter>SP1Framework</Filter>
     </ClCompile>
     <ClCompile Include="gameStage.cpp">
@@ -38,14 +38,16 @@
     <ClInclude Include="..\..\..\SP1Framework\SP1Framework\Framework\console.h">
       <Filter>SP1Framework</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\SP1Framework\SP1Framework\Framework\timer.h">
-      <Filter>SP1Framework</Filter>
-    </ClInclude>
     <ClInclude Include="gameStage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="maps.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testing.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
   </ItemGroup>
 </Project>

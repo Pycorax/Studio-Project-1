@@ -75,16 +75,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\SP1Framework\SP1Framework\Framework\console.cpp" />
-    <ClCompile Include="..\..\..\SP1Framework\SP1Framework\Framework\timer.cpp" />
     <ClCompile Include="gameStage.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="maps.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SP1Framework\SP1Framework\Framework\console.h" />
-    <ClInclude Include="..\..\..\SP1Framework\SP1Framework\Framework\timer.h" />
     <ClInclude Include="gameStage.h" />
     <ClInclude Include="maps.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testing.map" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

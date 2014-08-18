@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "gameStage.h"
+#include "../../../SP1Framework/SP1Framework/Framework/console.h"
 
 using std::cout;
 using std::cin;
@@ -8,20 +9,13 @@ using std::endl;
 using std::ifstream;
 using std::ofstream;
 
-enum gameState
-{
-	MAIN_MENU,
-	LOAD_MENU,
-	GAME,
-	QUIT,
-	MAX_STATES
-};
-
 void main()
 {
-	gameState game = MAIN_MENU;
+	//setConsoleSize(97,97);
 
-	while(game != QUIT)
+	gameState game = GAME;
+
+	while(game != EXIT)
 	{
 		switch(game)
 		{
@@ -29,7 +23,10 @@ void main()
 				mainMenu();
 				break;
 			case GAME:
-				game();
+				gameScreen(game);
+				break;
+			case QUIT_MENU:
+				quit(game);
 				break;
 		}
 	}

@@ -16,7 +16,7 @@ bool processMap(const char mapName[], vector<vector<char>> &processedMap)
 			
 			vector<char> *ptr = new vector<char>;
 
-			for (int coord_x = 0; coord_x < readLine.length() ; ++coord_x)
+			for (size_t coord_x = 0; coord_x < readLine.length() ; ++coord_x)
 			{
 				readChar = readLine[coord_x];
 				ptr->push_back(readChar);
@@ -40,26 +40,38 @@ void renderMap(vector<vector<char>> processedMap)
 	const char border = 176;
 	const char space = ' ';
 	const char obstacle = 'O';
+	const size_t spriteHeight = 3;
+	const size_t spriteWidth = 3;
 
-	for (int coord_y = 0; coord_y < processedMap.size(); ++coord_y)
+	//Controls Rows
+	for (size_t coord_y = 0; coord_y < processedMap.size(); ++coord_y)
 	{
-		for (int coord_x = 0; coord_x < processedMap[coord_y].size(); ++coord_x)
-		{	
-
-			switch(processedMap[coord_y][coord_x])
-			{
-				case'#':
-					cout << border;
-					break;
-				case'O':
-					cout << obstacle;
-					break;
-				default:
-					cout << space;
-					break;
+		//Controls height of each tile
+		for (int j = 0; j < spriteHeight; ++j)
+		{
+			//Controls Columns
+			for (size_t coord_x = 0; coord_x < processedMap[coord_y].size(); ++coord_x)
+			{	
+				//Controls width of each tile
+				for (int i = 0; i < spriteWidth; ++i)
+				{
+					switch(processedMap[coord_y][coord_x])
+					{
+						case'#':
+							cout << border;
+							break;
+						case'O':
+							cout << obstacle;
+							break;
+						default:
+							cout << space;
+							break;
+					}
+				}
+			
 			}
-		}
 
-		cout << endl;
+			cout << endl;
+		}
 	}
 }
